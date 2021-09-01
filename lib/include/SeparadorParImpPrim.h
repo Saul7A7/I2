@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /** Esta biblioteca contiene 3 funciones de busqueda sobre una matrix cuadrada: 
  * buscar numeros pares, buscar numeros impares y buscar numeros primos.
  * Cada busqueda se guarda en un arreglo cuyo elemento final es el numero 0,
@@ -5,6 +6,12 @@
  * Cada funcion regresa una variable tipo int* que apunta al primer
  * elemento del arreglo.
  * Author: 
+=======
+/** Esta biblioteca sirve para separar los elementos de una
+ * matriz de numeros enteros en pares, impares y primos. 
+ * Al terminar las funciones devuelven un arreglo con los 
+ * elementos correcpondientes.
+>>>>>>> b388c9560acf0a0c470b6017d98218fcff634b85
  */
 
 #include <stdio.h>
