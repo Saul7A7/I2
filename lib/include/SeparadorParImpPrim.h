@@ -12,7 +12,7 @@
  *  @param tam, tamaño de la matriz
  *  @return vector_pares[], regresa un vector con los numeros pares de la matriz.
 */
-int *Sep_pares(int **matrizA, int tam);
+int *sep_pares(int **matrizA, int tam);
 
 /** @brief Busca los elementos primos dentro de una matriz cuadrada y los guarda dentro de un arreglo
  *  @param mat es la matriz de entrada
@@ -20,11 +20,11 @@ int *Sep_pares(int **matrizA, int tam);
  *  @returns un arreglo con todos los numeros primos de la matriz
  */
 
-int* Sep_Primos(int **mat, size_t tam);
+int* sep_Primos(int **mat, size_t tam);
 
 /** @brief Funcion que busca los numeros impares de una matriz.
  *  @param **MatrizA, matriz que recibe del usuario
  *  @param tam, tamaño de la matriz
  *  @return vector_pares[], regresa un vector con los numeros pares de la matriz.
 */
-int *Arregloimpares(int **mat, size_t dim);
+int *sep_impares(int **mat, size_t dim);

@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int *Arregloimpares(int **mat, size_t dim){
+int *sep_impares(int **mat, size_t dim){
     int *impares=(int*)malloc(sizeof(int));
     int cont =0;
     for(size_t i=0; i<  dim; i++){
