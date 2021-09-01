@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]){
     llenar(Matriz, Dimension, coso_para_random);
     imprimir_M(Matriz, Dimension);
 
-    int* ArregloImpares= sep_impares(Matriz, Dimension);
+    int* ArregloImpares = sep_impares(Matriz, Dimension);
     int i=0;
     printf("Impares:  \n");
     do{
@@ -27,19 +27,19 @@ int main(int argc, char const *argv[]){
     } while(ArregloImpares[i] !=0);
 
     int* ArregloPares = sep_pares(Matriz,Dimension);
-    printf("\n\n");
+    printf("\n\nPares\n");
     int a = 0;
     do{
-        printf("[%a]",ArregloPares[a]);
+        printf("[%i]",ArregloPares[a]);
         a++;
     }while(ArregloPares[a] != 0);
     
     int* ArregloPrimos= sep_primos(Matriz, Dimension);
     
     int c=0;
-    printf("Primos: \n");
+    printf("\n\nPrimos: \n");
     do{
-        printf("[%c] ", ArregloPrimos[c]);
+        printf("[%i] ", ArregloPrimos[c]);
         c++;
     } while (ArregloPrimos[c] != 0);
     
