@@ -6,7 +6,7 @@
 #include "../include/SeparadorParImpPrim.h"
 #include <stdlib.h>
 
-int* Sep_Primos(int **mat, size_t tam){
+int* sep_primos(int **mat, size_t tam){
     int *primos = (int*)malloc(sizeof(int));
     int pos = 0;
 

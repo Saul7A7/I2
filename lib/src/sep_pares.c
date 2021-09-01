@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int *Sep_pares(int **matrizA, int tam){   //function
+int *sep_pares(int **matrizA, int tam){   //function
 
 	int *vector_pares = (int*)malloc(tam*sizeof(int)); 		  //reservamos memoria para el vector_pares
 	int contador = 0;										  //inicializamos un contador para cada posición del vector_pares
