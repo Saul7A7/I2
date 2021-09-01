@@ -34,14 +34,14 @@ int main(int argc, char const *argv[]){
         a++;
     }while(ArregloPares[a] != 0);
     
-    int* Arreglopares= sep_primos(Matriz, Dimension);
+    int* ArregloPrimos= sep_primos(Matriz, Dimension);
     
     int c=0;
     printf("Primos: \n");
     do{
-        printf("[%c] ", Arreglopares[c]);
+        printf("[%c] ", ArregloPrimos[c]);
         c++;
-    } while (Arreglopares[c] != 0);
+    } while (ArregloPrimos[c] != 0);
     
     //imprimir_A(ArregloPares, 13);
     return 0;
