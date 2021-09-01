@@ -1,7 +1,7 @@
-/** This library contains functions to perform the four basic arithmetic
- * operations, that is, addition, subtraction, multiplication, and division.
- * It only works with 32-bit signed integers.
- * Author: A. G. Medrano-Chavez
+/** Esta biblioteca sirve para separar los elementos de una
+ * matriz de numeros enteros en pares, impares y primos. 
+ * Al terminar las funciones devuelven un arreglo con los 
+ * elementos correcpondientes.
  */
 
 #include <stdio.h>
