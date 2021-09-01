@@ -1,7 +1,10 @@
-/** This library contains functions to perform the four basic arithmetic
- * operations, that is, addition, subtraction, multiplication, and division.
- * It only works with 32-bit signed integers.
- * Author: A. G. Medrano-Chavez
+/** Esta biblioteca contiene 3 funciones de busqueda sobre una matrix cuadrada: 
+ * buscar numeros pares, buscar numeros impares y buscar numeros primos.
+ * Cada busqueda se guarda en un arreglo cuyo elemento final es el numero 0,
+ * esto para delimitar el limite del arreglo.
+ * Cada funcion regresa una variable tipo int* que apunta al primer
+ * elemento del arreglo.
+ * Author: 
  */
 
 #include <stdio.h>
@@ -12,7 +15,7 @@
  *  @param tam, tamaño de la matriz
  *  @return vector_pares[], regresa un vector con los numeros pares de la matriz.
 */
-int *sep_pares(int **matrizA, int tam);
+int *sep_pares(int **matrizA, size_t tam);
 
 /** @brief Busca los elementos primos dentro de una matriz cuadrada y los guarda dentro de un arreglo
  *  @param mat es la matriz de entrada
@@ -27,4 +30,4 @@ int* sep_Primos(int **mat, size_t tam);
  *  @param tam, tamaño de la matriz
  *  @return vector_pares[], regresa un vector con los numeros pares de la matriz.
 */
-int *sep_impares(int **mat, size_t dim);
+int *sep_impares(int **mat, size_t tam);
