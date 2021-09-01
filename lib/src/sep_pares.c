@@ -3,7 +3,7 @@
  * @param tam, tamaño de la matriz
  * @return vector_pares[], regresa un vector con los numeros pares de la matriz.
 */
-
+#include "../include/SeparadorParImpPrim.h"
 #include <stdio.h>
 #include <stdlib.h>
 
