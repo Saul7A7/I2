@@ -3,11 +3,15 @@
  * @param tam, tamaño de la matriz
  * @return vector_pares[], regresa un vector con los numeros pares de la matriz.
 */
-
+#include "../include/SeparadorParImpPrim.h"
 #include <stdio.h>
 #include <stdlib.h>
 
+<<<<<<< HEAD
 int *Sep_pares(int **matrizA, size_t tam){   //function
+=======
+int *sep_pares(int **matrizA, int tam){   //function
+>>>>>>> d6c3735023718de25ee4c81430c2fd9ad400b9f0
 
 	int *vector_pares = (int*)malloc(tam*sizeof(int)); 		  //reservamos memoria para el vector_pares
 	int contador = 0;										  //inicializamos un contador para cada posición del vector_pares

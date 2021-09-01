@@ -3,10 +3,10 @@
  * @param tam es el tamanio de la matriz
  * @returns un arreglo con todos los numeros primos de la matriz
  */
-
+#include "../include/SeparadorParImpPrim.h"
 #include <stdlib.h>
 
-int* Sep_Primos(int **mat, size_t tam){
+int* sep_primos(int **mat, size_t tam){
     int *primos = (int*)malloc(sizeof(int));
     int pos = 0;
 

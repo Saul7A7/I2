@@ -30,7 +30,7 @@ int *sep_pares(int **matrizA, size_t tam);
  *  @returns un arreglo con todos los numeros primos de la matriz
  */
 
-int* sep_Primos(int **mat, size_t tam);
+int* sep_primos(int **mat, size_t tam);
 
 /** @brief Funcion que busca los numeros impares de una matriz.
  *  @param **MatrizA, matriz que recibe del usuario
