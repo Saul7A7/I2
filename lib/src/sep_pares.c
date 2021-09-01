@@ -1,12 +1,11 @@
-/**@brief A function, busca los numeros pares de una matriz bidimensional
+/**@brief A function, busca los numeros pares de una matriz.
  * @param **MatrizA, matriz que recibe del usuario
  * @param tam, tamaño de la matriz
- * @return vector_pares[], regresa un vector con los numeros pares de la matriz bidimensional
+ * @return vector_pares[], regresa un vector con los numeros pares de la matriz.
 */
 
-
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 
 int *Sep_pares(int **matrizA, int tam){   //function
 
@@ -21,7 +20,7 @@ int *Sep_pares(int **matrizA, int tam){   //function
 		}
 	}
     vector_pares[contador] = 0; 							  //ingresamos un numero cero al ultimo para poder recorrel el arreglo completo
-	return vector_pares; 									   //regresamos el vector con los numeros pares
+	return vector_pares;									   //regresamos el vector con los numeros pares
 }
 
 	

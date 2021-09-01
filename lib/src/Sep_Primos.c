@@ -1,10 +1,10 @@
-#include <stdlib.h>
-
 /* @brief Busca los elementos primos dentro de una matriz cuadrada y los guarda dentro de un arreglo
  * @param mat es la matriz de entrada
  * @param tam es el tamanio de la matriz
  * @returns un arreglo con todos los numeros primos de la matriz
  */
+
+#include <stdlib.h>
 
 int* Sep_Primos(int **mat, size_t tam){
     int *primos = (int*)malloc(sizeof(int));

@@ -1,3 +1,9 @@
+/**@brief A function, busca los numeros impares de una matriz.
+ * @param **MatrizA, matriz que recibe del usuario
+ * @param tam, tamaño de la matriz
+ * @return vector_pares[], regresa un vector con los numeros pares de la matriz.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
