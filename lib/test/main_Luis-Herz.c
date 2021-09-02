@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "./lib/include/SeparadorParImpPrim.h"
+#include "../include/SeparadorParImpPrim.h"
 
 int** create_square_matrix(size_t dim);
 void llenar (int **, size_t, int);
@@ -10,16 +10,14 @@ void imprimir_A(int *Ar);
 int main(int argc, char const *argv[]){
     
     size_t Dimension = atoi(argv[1]);
-    int seed = atoi(argv[3]);
+    int seed = atoi(argv[2]);
+    char eleccion = argv[3][0];
     int **Matriz = create_square_matrix(Dimension);
     llenar(Matriz, Dimension, seed);
     imprimir_M(Matriz, Dimension);
     
     int* resultado;
-    resultado = sep_Primos(Matriz, Dimension);
-    imprimir_A(resultado);
-    /*printf("Elije una opcion 1 (buscar pares)\n 2 (buscar impares)\n 3 (buscar primos)\n");
-    char eleccion = argv[2][0];
+    
     switch (eleccion){
     case '1':
         resultado = sep_pares(Matriz, Dimension);
@@ -32,14 +30,14 @@ int main(int argc, char const *argv[]){
         imprimir_A(resultado);
         break;
     case '3':
-        resultado = sep_Primos(Matriz, Dimension);
+        resultado = sep_primos(Matriz, Dimension);
         printf("Primos: \n");
         imprimir_A(resultado);
         break;
     default:
         printf("Opcion invalida\n");
         break;
-    }*/
+    }
     
     return 0;
 }
