@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]){
     llenar(Matriz, Dimension, coso_para_random);
     imprimir_M(Matriz, Dimension);
 
-int* resul;
+    int* resul;
     resul = sep_impares(Matriz, Dimension);
     imprimir_A(resul);
 
