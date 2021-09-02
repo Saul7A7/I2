@@ -7,12 +7,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+<<<<<<< HEAD
+int *Sep_pares(int **matrizA, size_t tam){   //function
+=======
 int *sep_pares(int **matrizA, int tam){   //function
+>>>>>>> d6c3735023718de25ee4c81430c2fd9ad400b9f0
 
 	int *vector_pares = (int*)malloc(tam*sizeof(int)); 		  //reservamos memoria para el vector_pares
 	int contador = 0;										  //inicializamos un contador para cada posición del vector_pares
-	for(int i = 0; i < tam; i++){							  //recorremos la fila y columnas con los 2 for 
-		for(int j = 0; j < tam; j++){
+	for(size_t i = 0; i < tam; i++){							  //recorremos la fila y columnas con los 2 for 
+		for(size_t j = 0; j < tam; j++){
 			if(matrizA[i][j] %2 == 0 && matrizA[i][j] !=0){	  //verificamos cada posición de la matriz si es un numero par
 				vector_pares[contador] = matrizA[i][j]; 	  //guardamos cada numero par encontrado en la matriz en el vector_pares
 				contador++;   								  //incrementamos en 1 el contador
