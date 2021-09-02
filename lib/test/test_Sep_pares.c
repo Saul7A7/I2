@@ -23,7 +23,6 @@ int main(int argc, char const *argv[]){
     imprimir_M(Matriz, Dimension);
 
     //int PARES = pares(Matriz, Dimension);     IGNORAR ESTÓ... POR AHORA
-    
     int *ArregloPares = func_pares_matriz(Matriz,Dimension); //Aquí llamen a su funcion;
     printf("\n\n");
     int i = 0;
@@ -31,7 +30,6 @@ int main(int argc, char const *argv[]){
         printf("[%i]",ArregloPares[i]);
         i++;
     }while(ArregloPares[i] != 0);
-
 
    // imprimir_A(ArregloPares, PARES);
     return 0;
