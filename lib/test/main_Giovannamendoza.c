@@ -1,11 +1,11 @@
-#include "../include/SeparadorParImpPrim.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "..\include\SeparadorParImpPrim.h"
 
 int** create_square_matrix(size_t dim);
 void llenar(int **, size_t, int);
 void imprimir_M(int **M,int Dim);
-
+void  imprimir_A(int *Ar);
 
 int main(int argc, char const *argv[]){
     
@@ -17,37 +17,40 @@ int main(int argc, char const *argv[]){
     llenar(Matriz, Dimension, coso_para_random);
     imprimir_M(Matriz, Dimension);
 
-    int* ArregloImpares = sep_impares(Matriz, Dimension);
-    int i=0;
-    printf("Impares:  \n");
-    do{
-        printf("[%i] ", ArregloImpares[i]);
-        i++;
+int* resul;
+    resul = sep_impares(Matriz, Dimension);
+    imprimir_A(resul);
 
-    } while(ArregloImpares[i] !=0);
-
-    int* ArregloPares = sep_pares(Matriz,Dimension);
-    printf("\n\nPares: \n");
-    int a = 0;
-    do{
-        printf("[%i]",ArregloPares[a]);
-        a++;
-    }while(ArregloPares[a] != 0);
+    /*printf("\n Teclee una opcion: \n");
+    printf("1) buscar pares\n");
+    printf("2) buscar impares\n");
+    printf("3) buscar primos\n");
+    printf("4) salir \n");
     
-    int* ArregloPrimos= sep_primos(Matriz, Dimension);
-    
-    int c=0;
-    printf("\n\nPrimos: \n");
-    do{
-        printf("[%i] ", ArregloPrimos[c]);
-        c++;
-    } while (ArregloPrimos[c] != 0);
-    
-    //imprimir_A(ArregloPares, 13);
+    char opcion= argv[2][0];
+    switch (opcion){
+        case '1':
+            resul = sep_pares(Matriz, Dimension);
+            printf("Pares: \n");
+            imprimir_A(resul);
+            break;
+        case '2':
+            resul= sep_impares(Matriz, Dimension);
+            printf("Impares: \n");
+            imprimir_A(resul);
+            break;
+        case '3':
+            resul= sep_primos(Matriz, Dimension);
+            printf("Primos: \n");
+            imprimir_A(resul);
+            break;
+        default:
+            printf("Opcion incorrecta\n");
+            break;
+       } */
+       
     return 0;
-    
 }
-
 void llenar(int **M, size_t Dim, int seed){
     srand(seed);
     for(int i=0; i<Dim; i++){
@@ -71,4 +74,11 @@ void imprimir_M(int **M,int Dim){
         }
         printf("\n");
     }
+}
+void imprimir_A(int *Ar){
+    int i=0;
+    do{
+        printf("[%i]", Ar[i]);
+        i++;
+    }while (Ar[i] !=0);
 }
