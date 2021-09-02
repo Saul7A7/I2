@@ -27,7 +27,7 @@ int main(int argc, char const *argv[]){
     } while(ArregloImpares[i] !=0);
 
     int* ArregloPares = sep_pares(Matriz,Dimension);
-    printf("\n\nPares\n");
+    printf("\n\nPares: \n");
     int a = 0;
     do{
         printf("[%i]",ArregloPares[a]);

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include ".\lib\src\sep_impares.c"
+#include "../src/sep_impares.c"
 
 int** create_square_matrix(size_t dim);
 void llenar(int **, size_t, int);
